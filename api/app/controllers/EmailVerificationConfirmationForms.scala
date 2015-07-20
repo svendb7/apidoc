@@ -8,7 +8,7 @@ import play.api.mvc._
 import play.api.libs.json._
 import java.util.UUID
 
-object EmailVerificationConfirmationForms extends Controller {
+class EmailVerificationConfirmationForms extends Controller {
 
   def postEmailVerificationConfirmations() = AnonymousRequest(parse.json) { request =>
     request.body.validate[EmailVerificationConfirmationForm] match {

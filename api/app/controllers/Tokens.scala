@@ -8,10 +8,7 @@ import play.api.mvc._
 import play.api.libs.json._
 import java.util.UUID
 
-object Tokens extends Controller with Tokens
-
-trait Tokens {
-  this: Controller =>
+class Tokens extends Controller {
 
   def getUsersByUserGuid(
     userGuid: java.util.UUID,

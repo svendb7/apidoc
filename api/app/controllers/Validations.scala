@@ -8,7 +8,7 @@ import builder.OriginalValidator
 import play.api.mvc._
 import play.api.libs.json._
 
-object Validations extends Controller {
+class Validations extends Controller {
 
   private[this] val config = ServiceConfiguration(
     orgKey = "tmp",

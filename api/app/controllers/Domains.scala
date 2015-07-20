@@ -7,7 +7,7 @@ import lib.Validation
 import play.api.mvc._
 import play.api.libs.json._
 
-object Domains extends Controller {
+class Domains extends Controller {
 
   def postByOrgKey(orgKey: String) = Authenticated(parse.json) { request =>
     request.body.validate[Domain] match {

@@ -9,10 +9,7 @@ import play.api.libs.json._
 import java.util.UUID
 import scala.util.{Failure, Success, Try}
 
-object GeneratorServices extends Controller with GeneratorServices
-
-trait GeneratorServices {
-  this: Controller =>
+class GeneratorServices extends Controller {
 
   def get(
     guid: Option[UUID],

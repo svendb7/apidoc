@@ -8,7 +8,7 @@ import play.api.mvc._
 import play.api.libs.json._
 import java.util.UUID
 
-object Applications extends Controller {
+class Applications extends Controller {
 
   def getByOrgKey(
     orgKey: String,

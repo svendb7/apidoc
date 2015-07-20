@@ -19,7 +19,7 @@ import play.api.libs.json._
 
 import scala.concurrent.Future
 
-object Code extends Controller {
+class Code extends Controller {
 
   implicit val context = scala.concurrent.ExecutionContext.Implicits.global
 

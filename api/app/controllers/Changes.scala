@@ -5,10 +5,7 @@ import com.bryzek.apidoc.api.v0.models.json._
 import play.api.mvc._
 import play.api.libs.json._
 
-object Changes extends Controller with Changes
-
-trait Changes {
-  this: Controller =>
+class Changes extends Controller {
 
   def get(
     orgKey: Option[String],

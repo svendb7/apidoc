@@ -6,10 +6,7 @@ import play.api.mvc._
 import play.api.libs.json._
 import java.util.UUID
 
-object Items extends Controller with Items
-
-trait Items {
-  this: Controller =>
+class Items extends Controller {
 
   def get(
     q: Option[String],

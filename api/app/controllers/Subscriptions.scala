@@ -8,10 +8,7 @@ import play.api.mvc._
 import play.api.libs.json._
 import java.util.UUID
 
-object Subscriptions extends Controller with Subscriptions
-
-trait Subscriptions {
-  this: Controller =>
+class Subscriptions extends Controller {
 
   def get(
     guid: Option[UUID],

@@ -7,7 +7,7 @@ import db.{PasswordResetRequestsDao, UsersDao}
 import play.api.mvc._
 import play.api.libs.json._
 
-object PasswordResetRequests extends Controller {
+class PasswordResetRequests extends Controller {
 
   def post() = AnonymousRequest(parse.json) { request =>
     request.body.validate[PasswordResetRequest] match {

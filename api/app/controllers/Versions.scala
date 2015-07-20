@@ -10,7 +10,7 @@ import db.{ApplicationsDao, Authorization, OrganizationsDao, VersionValidator, V
 import play.api.mvc._
 import play.api.libs.json._
 
-object Versions extends Controller {
+class Versions extends Controller {
 
   private[this] val DefaultVisibility = Visibility.Organization
 

@@ -7,7 +7,7 @@ import play.api.mvc._
 import play.api.libs.json.Json
 import java.util.UUID
 
-object Memberships extends Controller {
+class Memberships extends Controller {
 
   def get(
     organizationGuid: Option[UUID],

@@ -8,7 +8,7 @@ import play.api.mvc._
 import play.api.libs.json._
 import java.util.UUID
 
-object MembershipRequests extends Controller {
+class MembershipRequests extends Controller {
 
   case class MembershipRequestForm(
     org_guid: java.util.UUID,

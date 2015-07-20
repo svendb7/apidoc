@@ -6,10 +6,7 @@ import play.api.mvc._
 import play.api.libs.json._
 import java.util.UUID
 
-object ComBryzekApidocGeneratorV0ModelsGenerators extends Controller with ComBryzekApidocGeneratorV0ModelsGenerators
-
-trait ComBryzekApidocGeneratorV0ModelsGenerators {
-  this: Controller =>
+class ComBryzekApidocGeneratorV0ModelsGenerators extends Controller {
 
   def getGenerators(
     guid: Option[_root_.java.util.UUID],

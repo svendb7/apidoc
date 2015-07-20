@@ -8,7 +8,7 @@ import play.api.mvc._
 import play.api.libs.json.{ Json, JsError, JsSuccess }
 import java.util.UUID
 
-object Users extends Controller {
+class Users extends Controller {
 
   case class UserAuthenticationForm(email: String, password: String)
   object UserAuthenticationForm {
